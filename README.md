@@ -50,3 +50,7 @@ Source code for Deep Learning-Based OFDM Receiver.
 1. Run `script_rayleigh` in Matlab for benchmarks
 2. Run `python3 run_local_ofdm.py --awgn=True` in terminal for training and testing results. 
 
+### For newer versions of Matlab and Tensorflow
+**Matlab**: `rayleighchan` was removed and replaced by ['comm.RayleighChannel'](https://www.mathworks.com/help/comm/ref/comm.rayleighchannel-system-object.html) from later versions of matlab. You may uncomment the lines 202-210, lines 293-300 in [/dev/m/OFDM_Benchmark_dev.m](/dev/m/OFDM_Benchmark_dev.m) to use the newer function. However, you need either replace `parfor` to `for` in that code to directly use the newer function, or change the code to initialize multiple identical objects of `comm.RayleighChannel` in lines 202-210 to enable the `parfor`. 
+
+**Tensorflow:** I use `tf.contrib.graph_editor` to enable the transfer learning scheme described in the paper. However, in Tensorflow 2, the `tf.contrib` is removed and `graph_editor` no longer exists. If you want to use TF2 rather than TF1, you will need to re-write the transfer learning (line 264-365 in [ofdmreceiver_np_mp.py](/dev/py//ofdmreceiver_np_mp.py)) with whatever equivalent new methods in TF 2.
