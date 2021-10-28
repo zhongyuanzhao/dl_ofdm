@@ -34,7 +34,7 @@ Source code for Deep Learning-Based OFDM Receiver.
 + Matlab R2017b, R2018a (replace `rayleighchan` in the code for newer release)
 + Python3 compatiable
 + TensorFlow 1.x: `tensorflow-gpu==1.15`, docker tensorflow image [1.15.5-gpu-jupyter](https://hub.docker.com/layers/tensorflow/tensorflow/1.15.5-gpu-jupyter/images/sha256-5f2338b5816cd73ea82233e2dd1ee0d8e2ebf539e1e8b5741641c1e082897521?context=explore
-) is highly recommended if you just want a quick tryout. 
+) is highly recommended if you just want a quick tryout. If your GPU is not supported by that docker image, checkout latest docker images with tag `[year.month]-tf1-py3` on [Nvidia NGC](https://ngc.nvidia.com/catalog/containers/nvidia:tensorflow/tags).
 + **Note:** newer versions of Matlab and Tensorflow are possible, but require quite some work on the code (read [here](#for-newer-versions-of-matlab-and-tensorflow)). 
 
 ### Contents of directories
