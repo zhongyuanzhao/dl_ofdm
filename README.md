@@ -17,9 +17,9 @@ Zhongyuan Zhao, Mehmet C. Vuran, Fujuan Guo, and Stephen Scott, Deep-Waveform: A
 
 [Pre-Print](https://arxiv.org/abs/1810.07181)
 
-The majority of this work was completed during the Ph.D. studies of the author Zhongyuan Zhao at UNL. This work was supported by the NSF under Grant CNS-1731833.
+**The majority of this work was completed during the Ph.D. studies of the author Zhongyuan Zhao at UNL. This work was supported by the NSF under Grant CNS-1731833.**
 
-UNL-CPN-Lab: [website](https://cpn.unl.edu), [github](https://github.com/UNL-CPN-Lab)
+**UNL-CPN-Lab: [website](https://cpn.unl.edu), [github](https://github.com/UNL-CPN-Lab)**
 
 ## Abstract
 The (inverse) discrete Fourier transform (DFT/IDFT) is often perceived as essential to orthogonal frequency-division multiplexing (OFDM) systems. In this paper, a deep complex-valued convolutional network (DCCN) is developed to recover bits from time-domain OFDM signals without relying on any explicit DFT/IDFT. The DCCN can exploit the cyclic prefix (CP) of OFDM waveform for increased SNR by replacing DFT with a learned linear transform, and has the advantage of combining CP-exploitation, channel estimation, and intersymbol interference (ISI) mitigation, with a complexity of \mathcal{O}(N^2). Numerical tests show that the DCCN receiver can outperform the legacy channel estimators based on ideal and approximate linear minimum mean square error (LMMSE) estimation and a conventional CP-enhanced technique in Rayleigh fading channels with various delay spreads and mobility. The proposed approach benefits from the expressive nature of complex-valued neural networks, which, however, currently lack support from popular deep learning platforms. In response, guidelines of exact and approximate implementations of a complex-valued convolutional layer are provided for the design and analysis of convolutional networks for wireless PHY. Furthermore, a suite of novel training techniques are developed to improve the convergence and generalizability of the trained model in fading channels. This work demonstrates the capability of deep neural networks in processing OFDM waveforms and the results suggest that the FFT processor in OFDM receivers can be replaced by a hardware AI accelerator.
